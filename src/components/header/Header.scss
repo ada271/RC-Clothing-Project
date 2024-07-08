@@ -14,10 +14,21 @@
     }
 
     .btns{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
+        // display: flex;
+        // flex-wrap: wrap;
+        // justify-content: center;
+        // align-items: center;
+        // gap: 1rem;
+
+        @include flexx(row,center, 1rem);
+
+        button{
+            padding: 1rem;
+            border-radius: 1rem;
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: all 1s;
+        }
     }
 }
