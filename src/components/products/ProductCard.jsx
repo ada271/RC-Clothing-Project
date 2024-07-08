@@ -33,9 +33,9 @@ const ProductCard = ({title,price,image}) => {
 
 
 //! 1. YOL
-// const ProductCard = ({ürün}) => {
-//      console.log(ürün);
-//      const{price,image,title}=ürün
+// const ProductCard = ({urun}) => {
+//      console.log(urun);
+//      const{price,image,title}=urun
 //   return (
 //     <div className='card'>
 //   <div className='price'>

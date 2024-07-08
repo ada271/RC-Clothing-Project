@@ -1,0 +1,15 @@
+@import "../../scss/mixins";    
+@import "../../scss/variables";
+
+.products-list{
+
+    .card{
+        width: 350px;
+
+
+        img{
+            width: 100%;
+        }
+
+    }
+}
