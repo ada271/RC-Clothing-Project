@@ -15,7 +15,7 @@ const ProductCard = ({title,price,image}) => {
       <img src={image} alt="" />
 
       <div className="card_over">
-        <h2>{title}</h2>
+        <h2>{title} + </h2>
       </div>
     </div>
   );

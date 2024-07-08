@@ -3,12 +3,60 @@
 
 .products-list{
 
+    margin: 1rem;
+
+    @include flexx(row, space-evenly, 2rem);
+
     .card{
         width: 350px;
+        height: $cardHeight;
+        position: relative;
+        overflow: hidden;
 
+
+        .price{
+            color: red;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-color: $cardBgColor;
+            color: $cardColor;
+            padding: $cardPadding;
+            font-size: 0.9rem;
+            border-radius: $borderRadius;
+            z-index: 2;
+        }
 
         img{
             width: 100%;
+            height: $cardHeight;
+            border-radius: $borderRadius;
+            filter: sepia(100%);
+        }
+
+        &_over{
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            font-size: 1.2rem;
+            padding: $cardPadding;
+            border-radius: $borderRadius;
+            color: darken( white, 50%);
+            background-color: $cardBgColor;
+            // left: 0;
+            transform: translateX(100%);
+            transition-duration: .7s;
+            
+        }
+
+        &:hover .card_over{
+            transform: translateX(0%);
+            
+        }
+
+        &:hover img{
+            filter: none;
         }
 
     }
